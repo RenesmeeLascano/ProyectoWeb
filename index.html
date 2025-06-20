@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto del Área Técnica</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-image: url('https://img.freepik.com/vector-premium/vector-tela-cuadros-textura-color-purpura-patron-costuras-diseno-fondo-ilustracion-vectorial_921039-8754.jpg?semt=ais_hybrid&w=740'); /* Fondo pastel sutil */
+      background-size: cover;
+      background-position: center;
+      color: #5D3A9B;
+    }
+
+    .titulo-institucion {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      color: #C06C84;
+      margin-top: 20px;
+      text-shadow: 1px 1px 2px white;
+    }
+
+    .escudo {
+      display: block;
+      margin: 20px auto;
+      width: 120px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #F8BBD0;
+    }
+
+    .titulo {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      margin: 30px auto;
+      padding: 20px;
+      max-width: 700px;
+      background-image: url('https://img.freepik.com/vector-premium/vector-estelar-fondo_363897-5319.jpg?semt=ais_hybrid&w=740'); /* Fondo recuadro */
+      background-size: cover;
+      border-radius: 20px;
+      color: white;
+      text-shadow: 2px 2px 5px #BA68C8;
+      animation: aparecer 2s ease-in-out;
+    }
+
+    .imagenjp {
+      display: block;
+      margin: 30px auto;
+      width: 180px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #F48FB1;
+      transition: transform 0.3s ease;
+    }
+
+    .imagenjp:hover {
+      transform: scale(1.1);
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: rgba(255, 240, 245, 0.7);
+      padding: 10px;
+      border-radius: 15px;
+      margin: 0 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .menu > li {
+      list-style: none;
+      margin: 5px 10px;
+      position: relative;
+    }
+
+    .menu > li > a {
+      display: block;
+      padding: 12px 20px;
+      background-color: #F8BBD0;
+      color: #6A1B9A;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .menu > li > a:hover {
+      background-color: #E1BEE7;
+      color: white;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #F3E5F5;
+      border-radius: 15px;
+      padding: 10px;
+      min-width: 160px;
+      z-index: 999;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .submenu a {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      color: #6A1B9A;
+      border-radius: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .submenu a:hover {
+      background-color: #CE93D8;
+      color: white;
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+      animation: desplegar 0.3s ease-in-out;
+    }
+
+    .datos-finales {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 20px;
+      color: #4A148C;
+      background-color: rgba(255,255,255,0.5);
+      padding: 20px;
+      border-radius: 20px;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 0 15px #F8BBD0;
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes desplegar {
+      from { opacity: 0; transform: scaleY(0.5); }
+      to { opacity: 1; transform: scaleY(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="titulo-institucion">UNIDAD EDUCATIVA "NICOLÁS INFANTE DÍAZ"</div>
+  <img src="escu.jpg" alt="Escudo" class="escudo">
+  <div class="titulo">PROYECTO DEL ÁREA TÉCNICA INFORMÁTICA 2025 - 2026</div>
+  <img src="https://i.pinimg.com/originals/52/d8/d7/52d8d7d7dd20b858e02fd818ba06c53b.gif" alt="JP" class="imagenjp">
+
+  <ul class="menu">
+    <li><a href="#">Diseño Web</a>
+      <ul class="submenu">
+        <li><a href="Investigacion.html">1er Trimestre</a></li>
+        <li><a href="#">2do Trimestre</a></li>
+        <li><a href="#">3er Trimestre</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Sistemas Operativos</a>
+      <ul class="submenu">
+        <li><a href="#">1er Trimestre</a></li>
+        <li><a href="#">2do Trimestre</a></li>
+        <li><a href="#">3er Trimestre</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Soporte Técnico</a>
+      <ul class="submenu">
+        <li><a href="#">1er Trimestre</a></li>
+        <li><a href="#">2do Trimestre</a></li>
+        <li><a href="#">3er Trimestre</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Programación y Base de Datos</a>
+      <ul class="submenu">
+        <li><a href="#">1er Trimestre</a></li>
+        <li><a href="#">2do Trimestre</a></li>
+        <li><a href="#">3er Trimestre</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Aplicaciones Ofimáticas</a>
+      <ul class="submenu">
+        <li><a href="#">1er Trimestre</a></li>
+        <li><a href="#">2do Trimestre</a></li>
+        <li><a href="#">3er Trimestre</a></li>
+      </ul>
+    </li>
+    <li><a href="#">FOL</a>
+      <ul class="submenu">
+        <li><a href="#">1er Trimestre</a></li>
+        <li><a href="#">2do Trimestre</a></li>
+        <li><a href="#">3er Trimestre</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="datos-finales">
+    ALUMNA: RENESMEE NOEMI LASCANO<br>
+    DOCENTE: LCDA. TANIA VELEZ<br>
+    CURSO: 3ERO "N" INF.
+  </div>
+
+</body>
+</html>

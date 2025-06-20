@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub y Hosting</title>
+    <style>
+        body {
+            background-color: pink;
+background-image: url('https://img.freepik.com/vector-premium/vector-tela-cuadros-textura-color-purpura-patron-costuras-diseno-fondo-ilustracion-vectorial_921039-8754.jpg?semt=ais_hybrid&w=740');
+            color: black;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-transform: uppercase;
+            margin: 40px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: black;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: black;
+        }
+
+        li {
+            font-size: 16px;
+            line-height: 1.6;
+            color: red;
+            font-weight: bold;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        hr {
+            border: 2px solid red;
+            width: 80%;
+        }
+
+        .contenido-doble {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .seccion {
+            flex: 1 1 45%;
+            background-color: rgba(255, 240, 245, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .video {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 50%;
+            height: 250px;
+            border: 4px solid red;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 900px) {
+            .contenido-doble {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>GitHub y Hosting</h1>
+    <hr>
+
+    <div class="contenido-doble">
+        <!-- Sección GitHub -->
+        <div class="seccion">
+            <h2>GitHub</h2>
+            <p>
+                GitHub es una forja para alojar proyectos utilizando Git.
+                Es usado para crear, compartir y colaborar en código de programas.
+                Permite almacenar tu código en un repositorio y seguir los cambios en el tiempo.
+            </p>
+            <img src="github.jpg" alt="GitHub">
+            <h3>Características principales:</h3>
+            <ul>
+                <li>Repositorios:</li><p>Espacios donde se guarda el código del proyecto.</p>
+                <li>Git:</li><p>Sistema de control de versiones.</p>
+                <li>Colaboración:</li><p>Trabajo conjunto entre desarrolladores.</p>
+                <li>Ramas:</li><p>Versiones paralelas del código.</p>
+                <li>Pull requests:</li><p>Propuesta de cambios y revisiones.</p>
+                <li>Actions:</li><p>Automatiza tareas.</p>
+                <li>Paquetes:</li><p>Publicación de librerías propias.</p>
+                <li>Control de acceso:</li><p>Permisos y seguridad.</p>
+                <li>Issues:</li><p>Seguimiento de tareas o errores.</p>
+            </ul>
+            <div class="video">
+                <h3>Explicación de GitHub</h3>
+                <iframe src="https://www.youtube.com/embed/l6kdgO09G0I?si=ouZVctXAO90q5lmx" 
+                        title="Video GitHub" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Sección Hosting -->
+        <div class="seccion">
+            <h2>Hosting</h2>
+            <p>
+                El hosting es el servicio que proporciona almacenamiento para sitios web.
+                Permite publicar archivos y páginas en Internet desde servidores especializados.
+            </p>
+            <img src="hosting.jpg" alt="Hosting">
+            <h3>Características del Hosting:</h3>
+            <ul>
+                <li>1. Conectividad:</li><p>Requiere conexión a internet para acceder.</p>
+                <li>2. Almacenamiento:</li><p>Guarda contenido de sitios en servidores.</p>
+                <li>3. Capacidad:</li><p>Espacio y recursos para sitios grandes o múltiples.</p>
+                <li>4. Integración:</li><p>Incluye dominio y correo electrónico.</p>
+                <li>5. Accesibilidad:</li><p>Protege los datos de fallos locales.</p>
+            </ul>
+            <div class="video">
+                <h3>Explicación de Hosting</h3>
+                <iframe src="https://www.youtube.com/embed/9grmdNy9X6I?si=CcaaRjy3x8y1z5th"
+                        title="Video Hosting" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
